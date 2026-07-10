@@ -116,8 +116,48 @@ header{
     margin-bottom: 10px;
 }
 
-
 /* STACKS */
+.container-badge{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 15px;
+
+}
+.badge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a98554;
+    width: 300px;         /* Largura do seu botão */
+    height: 50px;
+    border-radius: 99999px;
+    padding: 5px 10px;
+    align-items: center;
+    color: var(--text-dark);
+}
+.badge-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.badge img{
+    min-width: 50px;
+    max-height: 40px;
+    object-fit: contain;
+
+}
+.badge span{
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    font-weight: 500;
+    align-content: center;  
+}
+
+
+
 
 /* PROJETOS */
 
