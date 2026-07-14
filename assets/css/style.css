@@ -163,7 +163,8 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 90px;
-    align-content: center;
+    justify-content: center;
+    align-items: stretch;
     
 }
 .project-card{
@@ -173,12 +174,42 @@ header{
     background-color: #A98554;
     border-radius: 5px;
     color: #2d2d2d;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 300px; /* Troca de height para min-height para o texto não vazar */
+    padding: 15px; /* Dá um respiro interno para os textos não colarem na borda */
+    
 }
 .project-card img{
-    width: 290px;
-    height: 180px;
+    margin-top: auto;
+    min-height: 100px; /* Troca de height para min-height para o texto não vazar */
+    padding: 5px; /* Dá um respiro interno para os textos não colarem na borda */
+    object-fit: contain;  
+}
+.project-card h3 {
+    margin: 0 0 10px 0; /* Ajusta o espaçamento do título */
+}
+
+.project-card p {
+    margin: 0;
+    font-size: 14px; /* Ajuste opcional para o texto da descrição */
+}
+
+/* O "Pulo do Gato" para os links */
+.project-links {
+    margin-top: auto; /* Esta propriedade empurra a div de links sempre para o final do card */
+    display: flex;
+    justify-content: center; /* Centraliza os links */
+    gap: 20px; /* Dá um espaço padronizado entre o "GitHub" e o "Link" */
+    padding-top: 20px; /* Espaço entre o texto descritivo e os links */
+}
+.project-links a {
+    color: #2D2D2D; /* Cor padrão de link, você pode alterar */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-links a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
 }
 
 /* CONTATO */
