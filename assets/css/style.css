@@ -259,8 +259,38 @@ header{
 
 /* FORMA DE TRABALHAR */
 
+.work-contanier{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-top: 15px;
+    
+}
 
+.card-intern{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-card{
+    display: flex;
+    flex-direction: row;
+    background-color: #A98554;
+    color:#2D2D2D;
+    gap: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+.work-card img{
+    margin-top: auto;
+    height: 100px; /* Troca de height para min-height para o texto não vazar */
+    padding: 10px; /* Dá um respiro interno para os textos não colarem na borda */
+    object-fit: contain;  
+}
 
 /* FOOTER */
+
+
 
 /* RESPONSIVIDADE */    
