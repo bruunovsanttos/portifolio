@@ -400,3 +400,269 @@ header{
 
 }
 /* RESPONSIVIDADE */    
+
+/* ============================= */
+/* RESPONSIVIDADE TABLET */
+/* ============================= */
+
+@media (max-width:1024px){
+
+    /* HEADER */
+
+    .header-actions{
+        gap:25px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+
+    /* QUEM SOU */
+
+    .quemsou-container{
+        gap:20px;
+    }
+
+
+    /* STACKS */
+
+    .badge{
+        width:220px;
+    }
+
+
+    /* PROJETOS */
+
+    .projects-container{
+        gap:40px;
+    }
+
+
+    /* CONTATO */
+
+    .contact-container{
+        gap:40px;
+    }
+
+
+    /* FOOTER */
+
+    .rodape{
+        gap:50px;
+    }
+
+}
+
+/* ============================= */
+/* RESPONSIVIDADE MOBILE */
+/* ============================= */
+
+
+@media(max-width:600px){
+
+
+    /* RESET MOBILE */
+
+    body{
+        overflow-x:hidden;
+    }
+
+
+
+    /* HEADER */
+
+
+    header{
+        padding:15px;
+    }
+
+
+    .logo h1{
+        font-size:26px;
+        text-align:center;
+    }
+
+
+    .logo p{
+        text-align:center;
+        font-size:14px;
+    }
+
+
+    .header-actions{
+
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+
+    }
+
+
+
+    /* QUEM SOU */
+
+
+    .quemsou-container{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+
+    .foto-perfil{
+
+        width:200px;
+
+    }
+
+
+    .apresentacao{
+
+        width:100%;
+        padding:15px;
+
+    }
+
+
+    .apresentacao p{
+
+        line-height:1.5;
+
+    }
+
+
+
+
+    /* STACKS */
+
+
+    .container-badge{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+
+    .badge{
+
+        width:90%;
+        max-width:300px;
+
+    }
+
+
+
+
+    /* PROJETOS */
+
+
+    .projects-container{
+
+        flex-direction:column;
+        align-items:center;
+        gap:30px;
+
+    }
+
+
+    .project-card{
+
+        width:90%;
+        height:auto;
+        min-height:350px;
+
+    }
+
+
+    .project-card img{
+
+        height:150px;
+
+    }
+
+
+
+
+    /* CONTATO */
+
+
+    .contact-container{
+
+        flex-direction:column;
+        align-items:center;
+        gap:30px;
+
+    }
+
+
+    .contact-card{
+
+        width:200px;
+
+    }
+
+
+
+    /* FORMA DE TRABALHAR */
+
+
+    .work-card{
+
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        padding:15px;
+
+    }
+
+
+    .work-card img{
+
+        margin:auto;
+
+    }
+
+
+
+    /* FOOTER */
+
+
+    .rodape{
+
+        flex-direction:column;
+        gap:30px;
+        align-items:center;
+
+    }
+
+
+    .footer-contact{
+
+        align-items:center;
+
+    }
+
+
+
+    /* WHATSAPP */
+
+
+    .whatsapp-float{
+
+        width:50px;
+        height:50px;
+        right:20px;
+        bottom:20px;
+
+    }
+
+
+    .whatsapp-float i{
+
+        font-size:30px;
+
+    }
+
+
+}
