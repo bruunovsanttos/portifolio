@@ -37,6 +37,14 @@ h1,h2,h3{
 p, span, a{
     font-family: var(--text-font);
 }
+a{
+    color: #a98554;
+    text-decoration: none;
+
+}
+a:hover{
+    text-decoration: underline;
+}
 
 /* HEADER */
 header{
@@ -214,7 +222,44 @@ header{
 
 /* CONTATO */
 
+.contact-total{
+    padding: 15px;
+
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    padding: 15px;
+   
+}
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #a98554;
+    gap: 10px;
+}
+.contact-container img{
+    max-width: 100px;
+    max-height: 150px;
+}
+.contact-container span{
+    color: #a98554;
+    text-decoration: none;
+
+}
+.contact-container span:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
+}
+
 /* FORMA DE TRABALHAR */
+
+
 
 /* FOOTER */
 
