@@ -19,6 +19,35 @@
 
 }
 
+section{
+    animation:fade .8s ease;
+}
+
+@keyframes fade{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0.3);
+    }
+
+}
+
+header{
+
+    position:sticky;
+    top:0;
+    background:#2222;
+    z-index:1000;
+    backdrop-filter:blur(20px);
+    background:rgba(34,34,34,.8);
+
+}
+
 /* BODY */
 body{
     background-color: var(--background-color);
@@ -85,7 +114,7 @@ header{
 .foto-perfil{
     width: 170px;
     background-color: #A98554;
-    border-radius: 5px;
+    border-radius: 16px;
     padding: 5px;
 
     display: flex;
@@ -98,7 +127,7 @@ header{
 .foto-perfil img{
     width: 100%;
     display: block;
-    border-radius: 8px;
+    border-radius: 16px;
 }
 
 .apresentacao{
@@ -111,7 +140,7 @@ header{
     background-color: #A98554;
     color: #2D2D2D;
 
-    border-radius: 5px;
+    border-radius: 16px;
     padding: 5px;
 }
 
@@ -143,6 +172,7 @@ header{
     padding: 5px 10px;
     align-items: center;
     color: var(--text-dark);
+    transition:.3s;
 }
 .badge-content{
     display: flex;
@@ -163,6 +193,10 @@ header{
     font-weight: 500;
     align-content: center;  
 }
+.badge:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(134, 134, 134, 0.25);
+}
 
 /* PROJETOS */
 
@@ -180,11 +214,12 @@ header{
     flex-direction: column;
     text-align: center;
     background-color: #A98554;
-    border-radius: 5px;
+    border-radius: 16px;
     color: #2d2d2d;
     width: 250px;
     height: 300px; /* Troca de height para min-height para o texto não vazar */
     padding: 15px; /* Dá um respiro interno para os textos não colarem na borda */
+    transition:.3s;
     
 }
 .project-card img{
@@ -200,6 +235,10 @@ header{
 .project-card p {
     margin: 0;
     font-size: 14px; /* Ajuste opcional para o texto da descrição */
+    
+}
+.project-card:hover img{
+    transform:scale(1.05);
 }
 
 /* O "Pulo do Gato" para os links */
@@ -218,6 +257,10 @@ header{
 
 .project-links a:hover {
     text-decoration: underline; /* Efeito ao passar o mouse */
+}
+.project-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(134, 134, 134, 0.25);
 }
 
 /* CONTATO */
@@ -241,29 +284,38 @@ header{
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #a98554;
     gap: 10px;
+    background-color: #A98554;
+    color: #2D2D2D;
+    border-radius: 16px;
+    transition:.3s;
+
 }
 .contact-container img{
     max-width: 100px;
     max-height: 150px;
 }
 .contact-container span{
-    color: #a98554;
+    color: #2D2D2D;
     text-decoration: none;
 
 }
 .contact-container span:hover {
     text-decoration: underline; /* Efeito ao passar o mouse */
 }
+.contact-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(134, 134, 134, 0.25);
+}
 
 /* FORMA DE TRABALHAR */
 
-.work-contanier{
+.work-container{
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 16px;
     margin-top: 15px;
+    gap: 15px;
     
 }
 
@@ -277,10 +329,15 @@ header{
     flex-direction: row;
     background-color: #A98554;
     color:#2D2D2D;
-    gap: 15px;
-    border-radius: 10px;
+    gap: 20px;
+    border-radius: 16px;
     margin-top: 10px;
+    transition:.3s;
 
+}
+.work-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(134, 134, 134, 0.25);
 }
 .work-card img{
     margin-top: auto;
@@ -291,6 +348,55 @@ header{
 
 /* FOOTER */
 
+.rodape{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-weight: bold;
+    gap: 400px;
+    
+    
+}
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    
+}
+.footer-contact img{
+    display: flex;
+    flex-direction: row;
+    max-width: 30px;
+    max-height: 30px;
+}
 
 
+/* WHATSAPP FLUTUANTE */
+
+.whatsapp-float{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #A98554;
+    color: #2D2D2D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    box-shadow: 0 8px 20px rgba(131, 130, 130, 0.3);
+    transition: .3s;
+}
+.whatsapp-float i{
+    color: #2D2D2D;
+    font-size: 40px;
+}
+
+.whatsapp-float:hover{
+    transform: scale(1.1);
+    text-decoration: none;
+
+}
 /* RESPONSIVIDADE */    
