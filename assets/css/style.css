@@ -457,56 +457,153 @@ header{
 /* ============================= */
 
 
+/* ===================================== */
+/* RESPONSIVIDADE MOBILE */
+/* Até 600px */
+/* ===================================== */
+
+
 @media(max-width:600px){
 
 
-    /* RESET MOBILE */
+    /* ================= */
+    /* GERAL */
+    /* ================= */
+
 
     body{
+
         overflow-x:hidden;
+
+    }
+
+
+    section{
+
+        padding:10px;
+
     }
 
 
 
-    /* HEADER */
+    h2{
+
+        font-size:24px;
+        text-align:center;
+
+    }
+
+
+
+    p{
+
+        font-size:14px;
+
+    }
+
+
+
+    /* ================= */
+    /* HEADER MOBILE */
+    /* ================= */
 
 
     header{
-        padding:15px;
+
+        position:relative;
+        top:auto;
+
+        background:#222222;
+
+        backdrop-filter:none;
+
+        padding:10px;
+
+        gap:10px;
+
     }
+
+
+
+    .logo{
+
+        gap:3px;
+
+    }
+
 
 
     .logo h1{
-        font-size:26px;
+
+        font-size:22px;
         text-align:center;
+
     }
+
 
 
     .logo p{
+
+        font-size:12px;
         text-align:center;
-        font-size:14px;
+
     }
+
 
 
     .header-actions{
 
-        flex-direction:column;
-        align-items:center;
-        gap:15px;
+        display:flex;
+
+        flex-direction:row;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:10px;
 
     }
 
 
 
+    .header-actions a{
+
+        font-size:13px;
+
+    }
+
+
+
+    /*
+    Esconde links menos importantes
+    no mobile
+    */
+
+
+    .header-actions a:nth-child(1),
+    .header-actions a:nth-child(3),
+    .header-actions a:nth-child(6){
+
+        display:none;
+
+    }
+
+
+
+    /* ================= */
     /* QUEM SOU */
+    /* ================= */
 
 
     .quemsou-container{
 
         flex-direction:column;
+
         align-items:center;
 
     }
+
 
 
     .foto-perfil{
@@ -516,12 +613,15 @@ header{
     }
 
 
+
     .apresentacao{
 
         width:100%;
+
         padding:15px;
 
     }
+
 
 
     .apresentacao p{
@@ -533,67 +633,111 @@ header{
 
 
 
+    /* ================= */
     /* STACKS */
+    /* ================= */
 
 
     .container-badge{
 
         flex-direction:column;
+
         align-items:center;
 
+        gap:15px;
+
     }
+
 
 
     .badge{
 
         width:90%;
+
         max-width:300px;
+
+        height:55px;
+
+    }
+
+
+
+    .badge img{
+
+        min-width:40px;
+
+        max-height:35px;
 
     }
 
 
 
 
+    /* ================= */
     /* PROJETOS */
+    /* ================= */
 
 
     .projects-container{
 
         flex-direction:column;
+
         align-items:center;
+
         gap:30px;
 
     }
 
 
+
     .project-card{
 
         width:90%;
+
         height:auto;
+
         min-height:350px;
 
     }
+
 
 
     .project-card img{
 
         height:150px;
 
+        min-height:150px;
+
+    }
+
+
+
+    .project-links{
+
+        padding-top:15px;
+
+        gap:15px;
+
     }
 
 
 
 
+    /* ================= */
     /* CONTATO */
+    /* ================= */
 
 
     .contact-container{
 
         flex-direction:column;
+
         align-items:center;
-        gap:30px;
+
+        gap:25px;
 
     }
+
 
 
     .contact-card{
@@ -604,20 +748,47 @@ header{
 
 
 
+    .contact-container img{
+
+        max-width:80px;
+
+        max-height:80px;
+
+    }
+
+
+
+
+    /* ================= */
     /* FORMA DE TRABALHAR */
+    /* ================= */
+
+
+    .work-container{
+
+        gap:20px;
+
+    }
+
 
 
     .work-card{
 
         flex-direction:column;
+
         align-items:center;
+
         text-align:center;
+
         padding:15px;
 
     }
 
 
+
     .work-card img{
+
+        height:80px;
 
         margin:auto;
 
@@ -625,31 +796,49 @@ header{
 
 
 
+    .card-intern{
+
+        flex-direction:column;
+
+    }
+
+
+
+
+    /* ================= */
     /* FOOTER */
+    /* ================= */
 
 
     .rodape{
-
         flex-direction:column;
-        gap:30px;
         align-items:center;
-
+        gap:25px;
+        text-align:center;
     }
+
 
 
     .footer-contact{
-
         align-items:center;
-
     }
 
 
 
-    /* WHATSAPP */
+    .footer-contact img{
+        max-width:25px;
+        max-height:25px;
+    }
+
+
+
+
+    /* ================= */
+    /* WHATSAPP FLUTUANTE */
+    /* ================= */
 
 
     .whatsapp-float{
-
         width:50px;
         height:50px;
         right:20px;
@@ -658,11 +847,11 @@ header{
     }
 
 
+
     .whatsapp-float i{
 
         font-size:30px;
 
     }
-
 
 }
